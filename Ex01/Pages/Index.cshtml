@@ -1,0 +1,37 @@
+﻿@page
+@model Ex01.Pages.IndexModel
+<div>
+    <table>
+        <tr>
+            <td>Номер</td>
+            <td>Имя</td>
+        </tr>
+        @for (int i = 0; i < Model.People?.Length; i++)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@Model.People[i]</td>
+            </tr>
+        }
+    </table>
+</div>
+
+<div>
+    @if (!(Model.message1 is null))
+    {
+        <p>Сообщение 1: @Model.message1</p>
+    }
+
+    <p>Сообщение 2: @Model.message2</p>
+</div>
+
+<div>
+    <form method="post">
+        <input type="number" name="num1" placeholder="first number" />
+        <input type="number" name="num2" placeholder="second number" />
+        <input type="submit" value="Sum" />
+        @Html.AntiForgeryToken()
+    </form>
+
+    <label>Sum result = @ViewData["sum"]</label>
+</div>
