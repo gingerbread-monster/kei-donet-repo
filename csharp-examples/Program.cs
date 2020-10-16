@@ -11,6 +11,10 @@ namespace csharp_examples
             //new ExpressionBodyMethodExample().Run();
 
             //new LambdaExpressionsExample().Run();
+
+            //new ExtensionMethodsExample().Run();
+
+            //new BuiltInDelegatesExample().Run();
         }
     }
 }

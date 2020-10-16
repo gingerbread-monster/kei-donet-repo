@@ -44,5 +44,5 @@ Console.WriteLine(anotherObject.Price);
 В данном случае второе свойство анонимного объекта получит имя свойства которым оно инициализировано. Соответственно к нему можно будет получить доступ вот так: `anotherObject.Price`
 
 ## Ещё
-- Читайте [подробнее о ключевом слове `var`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var) на сайте айте документации Microsoft.
+- Читайте [подробнее о ключевом слове `var`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var) на сайте документации Microsoft.
 - Читайте [подробнее об анонимных типах](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types) на сайте документации Microsoft.

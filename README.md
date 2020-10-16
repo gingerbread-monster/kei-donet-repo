@@ -7,8 +7,10 @@ C# 8, ASP.NET Core 3.1
 
 ## Примеры по основам C#
 * [Ключевое слово `var` и анонимные типы](csharp-examples/examples/anon-types-about.md)
-* [Expression Body Method](csharp-examples/examples/expression-body-method-about.md)
-* [Лямбда-выражения](csharp-examples\examples\lambda-expressions-about.md)
+* [Определение тела выражения для методов с помощью оператора `=>`](csharp-examples/examples/expression-body-method-about.md)
+* [Лямбда-выражения](csharp-examples/examples/lambda-expressions-about.md)
+* [Встроенные типы делегатов](csharp-examples/examples/expression-body-method-about.md)
+* [Методы расширения](csharp-examples/examples/extension-methods-about.md)
 
 ## Полезные ссылки
 * [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1)
