@@ -12,9 +12,18 @@ C# 8, ASP.NET Core 3.1
 * [Встроенные типы делегатов](csharp-examples/examples/expression-body-method-about.md)
 * [Методы расширения](csharp-examples/examples/extension-methods-about.md)
 
-## Полезные ссылки
-* [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1)
-    * [Введение в Razor Pages](https://metanit.com/sharp/aspnet5/29.1.php)
+## Примеры ASP .NET Core
+* [00: Введение и основы ASP.NET Core](Ex00/about.md)
+* [01: Простой пример с использованием Razor Pages](Ex01/about.md)
 
-* [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
-* [.NET 5 and the future of .NET Standard](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/)
+## Полезные ссылки
+* [Все Git репозитории платформы .NET](https://github.com/dotnet)
+* [Introduction to .NET](https://docs.microsoft.com/en-us/dotnet/core/introduction)
+* [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-3.1)
+    * [Русскоязычное руководство по ASP.NET Core 3](https://metanit.com/sharp/aspnet5/)
+* [ASP.NET Core fundamentals](https://docs.microsoft.com/en-us/aspnet/core/fundamentals)
+* [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1)
+    * [Введение в Razor Pages (на русском)](https://metanit.com/sharp/aspnet5/29.1.php)
+* Блоги разработчиков и история:
+    * [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
+    * [.NET 5 and the future of .NET Standard](https://devblogs.microsoft.com/dotnet/the-future-of-net-standard/)
