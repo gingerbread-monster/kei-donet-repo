@@ -1,7 +1,7 @@
 # Репозиторий для примеров по .NET
 Специально для KEI, кафедра IППЗ
 ___
-C# 8, ASP.NET Core 3.1
+C# 8, ASP<span>.</span>NET Core 3.1
 
 <img src="images/1200px-NET_Core_Logo.png" width="250">
 
@@ -12,8 +12,8 @@ C# 8, ASP.NET Core 3.1
 * [Встроенные типы делегатов](csharp-examples/examples/expression-body-method-about.md)
 * [Методы расширения](csharp-examples/examples/extension-methods-about.md)
 
-## Примеры ASP .NET Core
-* [00: Введение и основы ASP.NET Core](Ex00/about.md)
+## Примеры ASP<span>.</span>NET Core
+* [00: Введение и обзор основ ASP.NET Core](Ex00/Ex00.md)
 * [01: Простой пример с использованием Razor Pages](Ex01/about.md)
 
 ## Полезные ссылки
