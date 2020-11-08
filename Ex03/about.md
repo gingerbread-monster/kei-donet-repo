@@ -1,5 +1,5 @@
 ﻿# 01: Первый пример с использованием Razor Pages
-06/10/2020 | C# 8 | ASP.NET Core 3.1
+06/10/2020 | C# 8 | <span>ASP.NET</span> Core 3.1
 ___
 ### Содержание
 1. [Класс Startup](#Класс-Startup)

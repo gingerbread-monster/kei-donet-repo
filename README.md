@@ -14,6 +14,7 @@ C# 8, ASP<span>.</span>NET Core 3.1
 
 ## Примеры ASP<span>.</span>NET Core
 * [00: Введение и обзор основ ASP.NET Core](Ex00/Ex00.md)
+* [01: Конвейер обработки запросов и middleware](Ex01/about.md)
 * [03: Простой пример с использованием Razor Pages](Ex03/about.md)
 
 ## Полезные ссылки
