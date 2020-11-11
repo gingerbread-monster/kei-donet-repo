@@ -25,11 +25,17 @@ namespace Ex01
         public void ConfigureServices(IServiceCollection services)
         {
 
+            #region К примеру 06
+            services.BindAppJwtData(_configuration); 
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
+            // ПОДСКАЗКА: запускать можно только по 1 примеру за раз
+            // ( не закомментирован может быть только 1 блок #region )
+
             #region 01: Самый простой middleware компонент
 
             //app.Run(async context =>
@@ -132,6 +138,13 @@ namespace Ex01
             //});
             #endregion
 
+            #region 06: Взаимодействие нескольких пользовательских middleware компонентов (классов)
+            //app.UseMiddleware<ErrorHandlingMiddleware>();
+
+            //app.UseJwtAuthentication();
+
+            //app.UseMiddleware<RoutingMiddleware>();
+            #endregion
         }
     }
 }
