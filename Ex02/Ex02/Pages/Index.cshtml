@@ -1,0 +1,59 @@
+﻿@page
+
+    <b>Примеры:</b>
+    <table>
+        <tr>
+            <th>Путь</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td><a href="@Url.Page("./Example1")">/Example1</a></td>
+            <td class="my-padding">Самый простой пример созданного сервиса.</td>
+        </tr>
+        <tr>
+            <td><a href="@Url.Page("./Example2")">/Example2</a></td>
+            <td class="my-padding">Пример зависимости от интерфейса.</td>
+        </tr>
+        <tr>
+            <td><a id="ex3-link" href="@Url.Page("./Example3", values: new {lifetime = "transient"})">/Example3</a></td>
+            <td class="my-padding">Пример жизненных циклов сервисов.</td>
+            <td>
+                <input type="radio" name="service-lifetime" value="transient" checked onclick="OnLifetimeSelect()" />transient
+                <input type="radio" name="service-lifetime" value="scoped" onclick="OnLifetimeSelect()" />scoped
+                <input type="radio" name="service-lifetime" value="singleton" onclick="OnLifetimeSelect()" />singleton
+            </td>
+        </tr>
+        <tr>
+            <td><a href="@Url.Page("./Example4")">/Example4</a></td>
+            <td class="my-padding">Пример с несколькими реализациями интерфейса сервиса.</td>
+        </tr>
+    </table>
+
+    <style>
+        .my-padding {
+            padding-left: 10%;
+        }
+        td, th {
+            padding: 3px;
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+
+<script type="text/javascript">
+    // Заменяет query параметр в ссылке новым значением.
+    function OnLifetimeSelect() {
+        // Получаем выбранное значение радио кнопки
+        let selectedRadioValue =
+            document.querySelector('input[name=service-lifetime]:checked').value;
+
+        let elementToModify = document.getElementById('ex3-link');
+
+        // Заменяем значение query параметра у anchor ссылки полученным выше значением
+        let oldHrefValue = elementToModify.getAttribute('href');
+        let newHrefValue = oldHrefValue.replace(/\?lifetime=[a-z]*/i, '?lifetime=' + selectedRadioValue);
+        elementToModify.setAttribute('href', newHrefValue);
+    }
+</script>

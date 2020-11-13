@@ -1,0 +1,12 @@
+﻿@page
+@model Ex02.Pages.Example4Model
+
+@{
+    var notificationMessage = ViewData["notificationMessage"] as string;
+
+    if (!(notificationMessage is null))
+    {
+        <b>Оповещение для пользователя:</b>
+        <p>@notificationMessage</p>
+    }
+}

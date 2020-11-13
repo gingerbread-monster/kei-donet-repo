@@ -1,0 +1,17 @@
+﻿@page
+@model Ex02.Pages.Example3Model
+
+@{
+    if (!(Model.Result is null))
+    {
+        <b>Результат:</b>
+        for (int i = 0; i < Model.IterationsNumber; i++)
+        {
+            <p>@Model.Result[i]</p>
+        }
+    }
+    else
+    {
+        <b>Некорректное значение query параметра.</b>
+    }
+}

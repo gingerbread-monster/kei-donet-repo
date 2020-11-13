@@ -1,0 +1,15 @@
+﻿@page
+@model Ex02.Pages.Example1Model
+
+<div>
+    @{ 
+        string envDescription = Model.ViewData["appEnvironmentDescription"] as string;
+        string[] outputLines = envDescription.Split(Environment.NewLine);
+
+        <b>Окружение веб-приложения:</b>
+        foreach (string line in outputLines)
+        {
+            <p>@line</p>
+        }
+    }
+</div>

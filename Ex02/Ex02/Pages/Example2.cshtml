@@ -1,0 +1,12 @@
+﻿@page
+@model Ex02.Pages.Example2Model
+
+@{ 
+    var allUsers = ViewData["allUsers"] as IEnumerable<string>;
+
+    <b>Список пользователей:</b>
+    foreach (var user in allUsers)
+    {
+        <p>@user</p>
+    }
+}
