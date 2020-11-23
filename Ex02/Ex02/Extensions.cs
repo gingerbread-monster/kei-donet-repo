@@ -39,13 +39,13 @@ namespace Ex02
             //services.AddTransient<IUserNotifierService>(provider =>
             //{
             //    int currentCentury = DateTime.Now.Year / 100 + 1;
-            //    if (currentCentury == 21)
+            //    if (currentCentury < 21)
             //    {
-            //        return new EmailNotifierService();
+            //        return new MailNotifierService();
             //    }
             //    else
             //    {
-            //        return new MailNotifierService();
+            //        return new EmailNotifierService();
             //    }
             //});
             #endregion

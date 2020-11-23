@@ -1,7 +1,7 @@
 # Репозиторий для примеров по .NET
 Специально для KEI, кафедра IППЗ
 ___
-C# 8, ASP<span>.</span>NET Core 3.1
+C# 9, ASP<span>.</span>NET Core 5
 
 <img src="images/1200px-NET_Core_Logo.png" width="250">
 

@@ -4,7 +4,7 @@
 @{
     var notificationMessage = ViewData["notificationMessage"] as string;
 
-    if (!(notificationMessage is null))
+    if (notificationMessage is not null)
     {
         <b>Оповещение для пользователя:</b>
         <p>@notificationMessage</p>

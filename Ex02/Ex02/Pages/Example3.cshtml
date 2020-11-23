@@ -2,7 +2,7 @@
 @model Ex02.Pages.Example3Model
 
 @{
-    if (!(Model.Result is null))
+    if (Model.Result is not null)
     {
         <b>Результат:</b>
         for (int i = 0; i < Model.IterationsNumber; i++)

@@ -1,5 +1,5 @@
 ﻿# 01: Первый пример с использованием Razor Pages
-06/10/2020 | C# 8 | <span>ASP.NET</span> Core 3.1
+06/10/2020 | C# 9 | <span>ASP.NET</span> Core 5
 ___
 ### Содержание
 1. [Класс Startup](#Класс-Startup)
@@ -100,7 +100,7 @@ public void OnGet(string msg1, string msg2)
 @//...предшествующий код страницы...
 
 <div>
-    @if (!(Model.message1 is null))
+    @if (Model.message1 is not null)
     {
         <p>Сообщение 1: @Model.message1</p>
     }
@@ -204,5 +204,5 @@ public void OnPost(int? num1, int? num2)
 Однако такой подход практически не используется из-за того что логика обработки запросов смешивается с логикой представления данных. Такое обычно не допускается.
 
 ## Полезные ссылки
-* [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1)
+* [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-5.0)
     * [Введение в Razor Pages](https://metanit.com/sharp/aspnet5/29.1.php)
