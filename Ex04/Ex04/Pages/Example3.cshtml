@@ -1,0 +1,39 @@
+﻿@page
+@model Ex04.Pages.Example3Model
+
+@{
+    <label>[Текущая страница: @Model.PagedTaskDtos.CurrentPage]</label>
+    <label>[Всего страниц: @Model.PagedTaskDtos.TotalPages]</label>
+    <label>[Размер страницы: @Model.PagedTaskDtos.PageSize]</label>
+    <hr />
+
+    <h3>Список задач:</h3>
+    <table>
+        <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Приоритет</th>
+            <th>Выполнена</th>
+        </tr>
+        @foreach (var task in Model.PagedTaskDtos.Items)
+        {
+            <tr>
+                <td>@task.Id</td>
+                <td>@task.Description</td>
+                <td>@task.PriorityLevel</td>
+                <td>@task.IsCompleted</td>
+            </tr>
+        }
+    </table>
+}
+
+<style>
+    td, th {
+        padding: 3px;
+        border: 1px solid black;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+</style>

@@ -17,6 +17,7 @@ C# 9, ASP<span>.</span>NET Core 5
 * [01: Конвейер обработки запросов и middleware](Ex01/about.md)
 * [02: Внедрение зависимостей и сервисы](Ex02/Ex02/about.md)
 * [03: Простой пример с использованием Razor Pages](Ex03/about.md)
+* [04: Взаимодействие с базой данных](Ex04/Ex04/about.md)
 
 ## Полезные ссылки
 * [Все Git репозитории платформы .NET](https://github.com/dotnet)

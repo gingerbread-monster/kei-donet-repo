@@ -1,0 +1,28 @@
+﻿@page
+
+<h3>Примеры:</h3>
+<table>
+    <tr>
+        <th>Путь</th>
+        <th>Описание</th>
+    </tr>
+    <tr>
+        <td><a href="@Url.Page("./Example1")">/Example1</a></td>
+        <td>Самый простой пример взаимодействия с БД.</td>
+    </tr>
+    <tr>
+        <td><a href="@Url.Page("./Example3")">/Example3</a></td>
+        <td>Практический пример получения данных с пагинацией.</td>
+    </tr>
+</table>
+
+<style>
+    td, th {
+        padding: 3px;
+        border: 1px solid black;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+</style>

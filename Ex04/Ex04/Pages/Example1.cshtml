@@ -1,0 +1,15 @@
+﻿@page
+@model Ex04.Pages.Example1Model
+
+@{
+    if (Model.StudentsNames.Count == 0)
+    {
+        <b style="color:red">В базе данных нет имён студентов!</b>
+    }
+
+    <h3>Имена студентов:</h3>
+    foreach (var studentName in Model.StudentsNames)
+    {
+        <p>@studentName</p>
+    }
+}
