@@ -12,7 +12,7 @@ namespace Ex04.DataAccess.Example2
 
         public DbSet<OrderEntity> Orders { get; set; }
 
-        public Example2DbContext(DbContextOptions options) 
+        public Example2DbContext(DbContextOptions<Example2DbContext> options) 
             : base(options)
         {
             //Database.EnsureCreated();

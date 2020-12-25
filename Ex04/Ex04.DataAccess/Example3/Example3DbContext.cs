@@ -15,7 +15,7 @@ namespace Ex04.DataAccess.Example3
         public DbSet<RouteEntity> Routes { get; set; }
         public DbSet<RouteSubscriberEntity> RouteSubscribers { get; set; }
 
-        public Example3DbContext(DbContextOptions options) 
+        public Example3DbContext(DbContextOptions<Example3DbContext> options) 
             : base(options)
         {
             Database.EnsureCreated();

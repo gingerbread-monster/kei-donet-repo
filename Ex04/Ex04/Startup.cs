@@ -1,18 +1,13 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-
 using Ex04.DataAccess.Example1;
 using Ex04.DataAccess.Example2;
 using Ex04.DataAccess.Example3;
-using Ex04.DataAccess.Example3.Entities;
-using Ex04.Dtos;
-using Ex04.Services.Helpers;
 using Ex04.Services.Interfaces;
 using Ex04.Services.Implementations;
+using Ex04.Extensions;
 
 namespace Ex04
 {
@@ -30,37 +25,38 @@ namespace Ex04
             services.AddRazorPages();
 
             #region 01: Самый простой пример
-            //string connectionString = Configuration["DbConnectionStrings:Example1"];
+            string connectionString1 = Configuration.GetSection("ConnectionStrings")["Example1"];
 
-            //services.AddDbContext<Example1DbContext>(options =>
-            //{
-            //    options.UseSqlServer(connectionString);
-            //});
+            services.AddDbContext<Example1DbContext>(options =>
+            {
+                options.UseSqlServer(connectionString1);
+            });
             #endregion
 
             #region 02: "Code first" и миграции
             services.AddDbContext<Example2DbContext>(options =>
             {
-                options.UseSqlServer(Configuration["DbConnectionStrings:Example2"]);
+                options.UseSqlServer(Configuration["ConnectionStrings:Example2"]);
             });
             #endregion
 
             #region 03: Пример с пагинацией
-            //services.AddDbContext<Example3DbContext>(options =>
-            //{
-            //    options.UseSqlServer(Configuration["DbConnectionStrings:Example3"]);
-            //});
+            string connectionString3 = Configuration.GetConnectionString("Example3");
 
-            //services.AddTransient<ITaskService, TaskService>();
+            services.AddDbContext<Example3DbContext>(options =>
+            {
+                options.UseSqlServer(connectionString3);
+            });
+
+            services.AddTransient<ITaskService, TaskService>();
+
+            services.ConfigureAutoMapper();
             #endregion
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            app.UseDeveloperExceptionPage();
 
             app.UseRouting();
 

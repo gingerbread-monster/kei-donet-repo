@@ -18,7 +18,7 @@ namespace Ex04.Pages
 
         public void OnGet(int pageNumber = 1, int pageSize = 2)
         {
-            PagedTaskDtos = _taskService.GetTasks(pageNumber, pageSize);
+            PagedTaskDtos = _taskService.GetAllTasks(pageNumber, pageSize);
         }
     }
 }

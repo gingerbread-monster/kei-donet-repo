@@ -19,10 +19,6 @@ namespace Ex04.Pages
 
         public async Task OnGet()
         {
-            _dbContext.Students.FirstOrDefault().Name = "Petya";
-
-            _dbContext.SaveChanges();
-
             StudentsNames = await _dbContext
                 .Students
                 .Select(student => student.Name)

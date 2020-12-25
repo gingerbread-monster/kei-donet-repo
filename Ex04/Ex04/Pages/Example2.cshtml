@@ -1,0 +1,76 @@
+﻿@page
+@model Ex04.Pages.Example2Model
+
+@{
+    var clients = ViewData["clients"] as List<Ex04.DataAccess.Example2.Entities.ClientEntity>;
+    var products = ViewData["products"] as List<Ex04.DataAccess.Example2.Entities.ProductEntity>;
+    var orders = ViewData["orders"] as List<Ex04.DataAccess.Example2.Entities.OrderEntity>;
+}
+
+<h3>Все клиенты:</h3>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Email</th>
+        <th>Имя</th>
+    </tr>
+    @foreach (var client in clients)
+    {
+        <tr>
+            <td>@client.Id</td>
+            <td>@client.Email</td>
+            <td>@client.Name</td>
+        </tr>
+    }
+</table>
+
+<hr />
+
+<h3>Все товары:</h3>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Название</th>
+        <th>Описание</th>
+    </tr>
+    @foreach (var product in products)
+    {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.Description</td>
+        </tr>
+    }
+</table>
+
+<hr />
+
+<h3>Все заказы:</h3>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Дата и время заказа</th>
+        <th>Имя клиента</th>
+        <th>Название товара</th>
+    </tr>
+    @foreach (var order in orders)
+    {
+        <tr>
+            <td>@order.Id</td>
+            <td>@order.OrderDateTime</td>
+            <td>@order.Client.Name</td>
+            <td>@order.Product.Name</td>
+        </tr>
+    }
+</table>
+
+<style>
+    td, th {
+        padding: 3px;
+        border: 1px solid black;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+</style>

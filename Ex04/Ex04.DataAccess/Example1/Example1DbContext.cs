@@ -6,7 +6,7 @@ namespace Ex04.DataAccess.Example1
     {
         public DbSet<StudentEntity> Students { get; set; }
 
-        public Example1DbContext(DbContextOptions options) 
+        public Example1DbContext(DbContextOptions<Example1DbContext> options) 
             : base(options)
         {
             Database.EnsureCreated();
@@ -16,9 +16,9 @@ namespace Ex04.DataAccess.Example1
         {
             modelBuilder.Entity<StudentEntity>().HasData(new StudentEntity[]
             {
-                new(){Id = 1, Name="Вася"},
-                new(){Id = 2, Name="Петя"},
-                new(){Id = 3, Name="Вова"}
+                new(){Id = 1, Name = "Вася"},
+                new(){Id = 2, Name = "Петя"},
+                new(){Id = 3, Name = "Вова"}
             });
         }
     }

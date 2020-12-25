@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04", "Ex04\Ex04.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04.DataAccess", "Ex04.DataAccess\Ex04.DataAccess.csproj", "{D72B5447-81C3-40AA-A649-BC20246814CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.DataAccess.Example2", "Ex04.DataAccess.Example2\Ex04.DataAccess.Example2.csproj", "{3CCFFDCF-A2C5-43C5-8D5A-8686C1AD0D29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04.DataAccess.Example2", "Ex04.DataAccess.Example2\Ex04.DataAccess.Example2.csproj", "{3CCFFDCF-A2C5-43C5-8D5A-8686C1AD0D29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.Dtos", "Ex04.Dtos\Ex04.Dtos.csproj", "{D079572B-34F6-4F49-9B2D-6D4A3B8797B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04.Dtos", "Ex04.Dtos\Ex04.Dtos.csproj", "{D079572B-34F6-4F49-9B2D-6D4A3B8797B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04.Services", "Ex04.Services\Ex04.Services.csproj", "{D5527C77-85AF-4372-9FAB-CB7C72353647}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04.Services", "Ex04.Services\Ex04.Services.csproj", "{D5527C77-85AF-4372-9FAB-CB7C72353647}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
