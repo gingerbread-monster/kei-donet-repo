@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Список примеров";
+}
+
+<h3>Примеры:</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Путь</th>
+        <th>Описание</th>
+    </tr>
+    <tr>
+        <td><a href="@Url.Action(action:"UseBuiltInHttpsFilter", controller:"Example1")">/Example1/UseBuiltInHttpsFilter</a></td>
+        <td>Пример с использованием встроенного фильтра авторизации.</td>
+    </tr>
+    <tr>
+        <td><a href="@Url.Action(action:"UseCustomAuthFilter", controller:"Example1")">/Example1/UseCustomAuthFilter</a></td>
+        <td>Пример с использованием собственного созданного фильтра авторизации.</td>
+    </tr>
+    <tr>
+        <td><a href="@Url.Action(action:"Action1", controller:"Example2")">/Example2/Action1</a></td>
+        <td>Пример с использованием фильтра ресурсов.</td>
+    </tr>
+    <tr>
+        <td><a href="@Url.Action(action:"SubmitPerson", controller:"Example3")">/Example3/SubmitPerson</a></td>
+        <td>Пример с использованием собственного созданного фильтра действий.</td>
+    </tr>
+    <tr>
+        <td><a href="@Url.Action(action:"GetData", controller:"Example4")">api/Example4/get-data</a></td>
+        <td>Пример с использованием собственного созданного фильтра исключений.</td>
+    </tr>
+    <tr>
+        <td><a href="@Url.Action(action:"GetList", controller:"Example5")">api/Example5/get-list</a></td>
+        <td>Пример с использованием собственного созданного фильтра результатов.</td>
+    </tr>
+</table>

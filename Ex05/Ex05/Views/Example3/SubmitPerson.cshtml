@@ -1,0 +1,28 @@
+﻿@model Ex05.Models.PersonModel
+@{ 
+    ViewData["Title"] = "Отправка";
+}
+
+<h4>PersonModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Example3" asp-action="ViewSubmittedPerson">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+            </div>
+            <div class="form-group form-check">
+                @Html.DisplayNameFor(model => model.IsVegan)
+                @Html.CheckBoxFor(model => model.IsVegan)
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Отправить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
